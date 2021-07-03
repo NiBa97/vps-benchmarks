@@ -54,7 +54,7 @@ Single Core     | 503
 Multi Core      | 1553
 
 ```
-##Hetzner
+## Hetzner
 ```
 # ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
 #              Yet-Another-Bench-Script              #
@@ -120,3 +120,69 @@ Multi Core      | 700
 Full Test       | https://browser.geekbench.com/v5/cpu/8671929
 
 ``` 
+
+## Netcup
+```
+ ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2021-06-05                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Sat Jul  3 23:55:17 CEST 2021
+
+Basic System Information:
+---------------------------------
+Processor  : QEMU Virtual CPU version 2.5+
+CPU cores  : 2 @ 2399.994 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ❌ Disabled
+RAM        : 3.9 GiB
+Swap       : 0.0 KiB
+Disk       : 39.3 GiB
+
+fio Disk Speed Tests (Mixed R/W 50/50):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 64.36 MB/s   (16.0k) | 655.48 MB/s  (10.2k)
+Write      | 64.48 MB/s   (16.1k) | 658.93 MB/s  (10.2k)
+Total      | 128.85 MB/s  (32.2k) | 1.31 GB/s    (20.5k)
+           |                      |
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 757.18 MB/s   (1.4k) | 949.28 MB/s    (927)
+Write      | 797.41 MB/s   (1.5k) | 1.01 GB/s      (988)
+Total      | 1.55 GB/s     (3.0k) | 1.96 GB/s     (1.9k)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed
+                |                           |                 |
+Clouvider       | London, UK (10G)          | 854 Mbits/sec   | 458 Mbits/sec
+Online.net      | Paris, FR (10G)           | 860 Mbits/sec   | 410 Mbits/sec
+WorldStream     | The Netherlands (10G)     | 845 Mbits/sec   | 441 Mbits/sec
+Biznet          | Jakarta, Indonesia (1G)   | 676 Mbits/sec   | 81.4 Mbits/sec
+Clouvider       | NYC, NY, US (10G)         | 781 Mbits/sec   | 379 Mbits/sec
+Velocity Online | Tallahassee, FL, US (10G) | 758 Mbits/sec   | 279 Mbits/sec
+Clouvider       | Los Angeles, CA, US (10G) | 753 Mbits/sec   | 340 Mbits/sec
+Iveloz Telecom  | Sao Paulo, BR (2G)        | 504 Mbits/sec   | 138 Mbits/sec
+
+iperf3 Network Speed Tests (IPv6):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed
+                |                           |                 |
+Clouvider       | London, UK (10G)          | 806 Mbits/sec   | 562 Mbits/sec
+Online.net      | Paris, FR (10G)           | busy            | 267 Mbits/sec
+WorldStream     | The Netherlands (10G)     | 859 Mbits/sec   | 340 Mbits/sec
+Clouvider       | NYC, NY, US (10G)         | 800 Mbits/sec   | 358 Mbits/sec
+Clouvider       | Los Angeles, CA, US (10G) | 743 Mbits/sec   | 314 Mbits/sec
+
+Geekbench 5 Benchmark Test:
+---------------------------------
+Test            | Value
+                |
+Single Core     | 510
+Multi Core      | 707
+Full Test       | https://browser.geekbench.com/v5/cpu/8671863
+```
